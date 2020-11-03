@@ -11,7 +11,8 @@ s = 0
 d = 1.0
 f = 1.0
 a = 0.0
-while True:
+t = bool(1)
+while t:
     d *= x
     f *= n*(n-1)
     a = d / f
@@ -19,7 +20,7 @@ while True:
     k += 1
     s += a
     if k > 10 and abs(a) < 0.00001:
-        break
+        t = 0
 print(s)
 # print(k)
 
